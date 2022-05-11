@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:padding="25dp"
+    android:background="@drawable/bookbg3">
+
+    <TextView
+        android:id="@+id/BOOKRECORDSPROFILES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Book Records Profiles"
+        android:textColor="#005B4A"
+        android:textSize="30sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/title_input2"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:background="@color/cardview_light_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toEndOf="@+id/BOOKTTILE"
+        app:layout_constraintTop_toBottomOf="@+id/BOOKRECORDSPROFILES" />
+
+    <TextView
+        android:id="@+id/YEAROFPUBLICATIONS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="YEAR OF PUBLICATIONS:"
+        android:textColor="#473219"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BOOKAUTHOR" />
+
+    <EditText
+        android:id="@+id/pages_input2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/cardview_light_background"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toEndOf="@+id/YEAROFPUBLICATIONS"
+        app:layout_constraintTop_toBottomOf="@+id/author_input2" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="48dp"
+        android:background="#518071"
+        android:text="Update"
+        android:textAllCaps="true"
+        android:textColor="#F5E8E4"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pages_input2"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="94dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:background="#518071"
+        android:text="Delete"
+        android:textAllCaps="true"
+        android:textColor="#F5E8E4"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/update_button"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/YEAROFPUBLICATIONS"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <TextView
+        android:id="@+id/BOOKAUTHOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="BOOK AUTHOR:"
+        android:textColor="#473219"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BOOKTTILE" />
+
+    <TextView
+        android:id="@+id/BOOKTTILE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:text="BOOK TITLE:"
+        android:textColor="#473219"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BOOKRECORDSPROFILES" />
+
+    <EditText
+        android:id="@+id/author_input2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/cardview_light_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/BOOKAUTHOR"
+        app:layout_constraintTop_toBottomOf="@+id/title_input2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
